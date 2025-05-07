@@ -45,12 +45,6 @@ model = joblib.load('stress_model.pkl')
 
 st.set_page_config(page_title="Stress Estimator", layout="centered")
 
-# 🌙 Theme Toggle
-theme = st.radio("Theme", ["🌞 Light Mode", "🌙 Dark Mode"])
-if theme == "🌙 Dark Mode":
-    st.markdown(
-        "<style>body{background-color:#0e1117; color:white;}</style>", unsafe_allow_html=True)
-
 # ─────────────────────
 # 📊 Sidebar Info
 # ─────────────────────
